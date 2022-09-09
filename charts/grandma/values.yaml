@@ -1,0 +1,4 @@
+
+appServer: spring-demo.jx-staging.svc.cluster.local
+customerName: "Robinson Crusoe"
+domain: nip.io

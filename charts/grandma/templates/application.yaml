@@ -1,0 +1,9 @@
+apiVersion: v1
+data:
+  application.yml: |
+    domain: {{ .Values.domain}}
+    customer.
+      name: {{ .Values.customerName}}
+kind: ConfigMap
+metadata:
+  name: application.yml

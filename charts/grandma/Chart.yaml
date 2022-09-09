@@ -1,0 +1,13 @@
+apiVersion: v2
+description: Collected applications for demo purpose
+name: grandma
+version: 0.0.1
+dependencies:
+
+- name: spring-demo
+  repository: bucketrepo/helm-charts/
+  version: 0.0.1
+
+- name: node-demo
+  repository: bucketrepo//helm-charts/
+  version: 0.0.1

@@ -1,0 +1,12 @@
+
+
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: configjs
+data:
+  'config.json':  |-
+      {
+       "appServer": "spring-demo.{{ .Release.namespace }}.svc.cluster.local",
+       "customerName": "{{ .Values.customerName }}"         
+       }
