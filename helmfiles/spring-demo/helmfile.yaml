@@ -5,4 +5,7 @@ releases:
 - chart: dev/spring-demo
   name: spring-demo
   version: 0.0.10
+  namespace: jx-babadofar-grandma-pr-2
+  values: 
+  - ../../jx-values.yaml
   
