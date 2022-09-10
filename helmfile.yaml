@@ -13,6 +13,4 @@ releases:
 - chart: './charts/grandma'
   name: grandma
   version: 0.1.0-SNAPSHOT  
-  set:
-  - name: namespace
-    value: {{ .Namespace }}
+  
