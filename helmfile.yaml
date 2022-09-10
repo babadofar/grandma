@@ -1,6 +1,14 @@
+environments:
+  default:
+    values:
+    - jx-values.yaml
 helmfiles:
 - path: helmfiles/spring-demo/helmfile.yaml
+  values:
+  - {{ toYaml .Values | nindent 4 }}
 - path: helmfiles/node-demo/helmfile.yaml
+  values:
+  - {{ toYaml .Values | nindent 4 }}
 repositories:
 - name: jx3
   url: https://jenkins-x-charts.github.io/repo

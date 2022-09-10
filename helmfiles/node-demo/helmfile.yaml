@@ -1,7 +1,3 @@
-environments:
-  default:
-    values:
-    - jx-values.yaml
 repositories:
 - name: dev
   url: https://babadofar.github.io/jx3-k3s-vault-demo/
@@ -9,6 +5,4 @@ releases:
 - chart: dev/node-demo
   name: node-demo
   version: 0.0.2
-  values:
-    - ../../jx-values.yaml
    

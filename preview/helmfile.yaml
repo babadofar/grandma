@@ -8,8 +8,8 @@ repositories:
 helmfiles:
    - path: ../helmfile.yaml
      values:
-     - jx-values.yaml
-     - values.yaml.gotmpl
+     values:
+     - {{ toYaml .Values | nindent 4 }}
      - namespace: '{{ requiredEnv "PREVIEW_NAMESPACE" }}' 
 releases:
 
