@@ -1,7 +1,3 @@
-environments:
-  default:
-    values:
-    - jx-values.yaml
 helmfiles:
 - path: helmfiles/spring-demo/helmfile.yaml
 - path: helmfiles/node-demo/helmfile.yaml
