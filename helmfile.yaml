@@ -5,6 +5,8 @@ environments:
 helmfiles:
 - path: helmfiles/spring-demo/helmfile.yaml
 - path: helmfiles/node-demo/helmfile.yaml
+  values:
+       - namespace: '{{ requiredEnv "PREVIEW_NAMESPACE" }}' 
 repositories:
 - name: jx3
   url: https://jenkins-x-charts.github.io/repo
