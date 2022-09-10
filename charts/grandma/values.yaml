@@ -1,4 +1,6 @@
-
 appServer: spring-demo.jx-staging.svc.cluster.local
 customerName: "Robinson Crusoe"
 domain: nip.io
+image:
+  repository: ghcr.io/babadofar/grandma
+  tag: 0.0.2
