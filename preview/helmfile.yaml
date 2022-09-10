@@ -6,7 +6,10 @@ repositories:
 - name: jx3
   url: https://jenkins-x-charts.github.io/repo
 helmfiles:
- - ../helmfile.yaml
+   - path: ../helmfile.yaml
+     values:
+     - jx-values.yaml
+     - namespace: '{{ requiredEnv "PREVIEW_NAMESPACE" }}' 
 releases:
 
 - chart: jx3/jx-verify
