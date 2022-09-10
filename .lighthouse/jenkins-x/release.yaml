@@ -16,6 +16,7 @@ spec:
           resources:
             # override limits for all containers here
             limits: {}
+            request: {}
           workingDir: /workspace/source
         steps:
         - image: uses:jenkins-x/jx3-pipeline-catalog/tasks/git-clone/git-clone.yaml@versionStream
@@ -27,8 +28,8 @@ spec:
           resources:
             # override requests for the pod here
             requests:
-              cpu: 400m
-              memory: 512Mi
+              cpu: 100m
+              memory: 212Mi
         - name: promote-changelog
           resources: {}
         - name: promote-helm-release
