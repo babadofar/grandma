@@ -7,8 +7,8 @@ repositories:
   url: https://jenkins-x-charts.github.io/repo
 helmfiles:
    - path: ../helmfile.yaml
-     values:
-       - namespace: '{{ requiredEnv "PREVIEW_NAMESPACE" }}' 
+     createNamespace: true
+     namespace: '{{ requiredEnv "PREVIEW_NAMESPACE" }}'
 releases:
 - chart: jx3/jx-verify
   name: jx-verify
