@@ -5,9 +5,11 @@ version: 0.0.1
 dependencies:
 
 - name: spring-demo
-  repository: bucketrepo/helm-charts/
-  version: 0.0.1
+  alias: spring-demo-gm
+  repository: https://babadofar.github.io/jx3-k3s-vault-demo/
+  version: 0.0.10
 
 - name: node-demo
-  repository: bucketrepo//helm-charts/
-  version: 0.0.1
+  alias: node-demo-gm
+  repository: https://babadofar.github.io/jx3-k3s-vault-demo/
+  version: 0.0.2
