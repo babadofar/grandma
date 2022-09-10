@@ -8,7 +8,8 @@ repositories:
 helmfiles:
    - path: ../helmfile.yaml
      values:
-     - {{ toYaml .Values | nindent 4 }}
+  #   - {{ toYaml .Values | nindent 4 }}
+     - jx-values.yaml
      - namespace: '{{ requiredEnv "PREVIEW_NAMESPACE" }}' 
 releases:
 - chart: jx3/jx-verify
