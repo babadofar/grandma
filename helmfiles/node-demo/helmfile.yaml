@@ -1,4 +1,3 @@
-
 environments:
   default:
     values:
@@ -10,6 +9,8 @@ releases:
 - chart: dev/node-demo
   name: node-demo
   version: 0.0.2
+  values:
+    - jx-values.yaml
   set:
   - name: namespace
     value: {{ .Namespace }}

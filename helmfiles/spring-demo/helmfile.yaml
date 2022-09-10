@@ -9,6 +9,8 @@ releases:
 - chart: dev/spring-demo
   name: spring-demo
   version: 0.0.10
+  values:
+    - jx-values.yaml
   set:
   - name: namespace
     value: {{ .Namespace }}
