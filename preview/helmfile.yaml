@@ -9,7 +9,7 @@ helmfiles:
    - path: ../helmfile.yaml
      values:
      - ../jx-values.yaml
-     - ../values.yaml.gotmpl
+     - values.yaml.gotmpl
      - namespace: '{{ requiredEnv "PREVIEW_NAMESPACE" }}' 
 releases:
 
