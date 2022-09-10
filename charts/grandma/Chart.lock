@@ -1,9 +1,0 @@
-dependencies:
-- name: spring-demo
-  repository: https://babadofar.github.io/jx3-k3s-vault-demo/
-  version: 0.0.10
-- name: node-demo
-  repository: https://babadofar.github.io/jx3-k3s-vault-demo/
-  version: 0.0.2
-digest: sha256:f89a9a84777f33426c5254a4cfc95ac081e0cc4e8fc9d92a4dfe48eb08566a17
-generated: "2022-09-10T21:21:24.374805+02:00"
