@@ -8,7 +8,7 @@ repositories:
 helmfiles:
    - path: ../helmfile.yaml
      
-     namespace: '{{ requiredEnv "PREVIEW_NAMESPACE" }}'
+    
 releases:
 - chart: jx3/jx-verify
   name: jx-verify
