@@ -1,1 +1,1 @@
-This repo holds some ...helm charts.
+This repo holds   ...helm charts.
