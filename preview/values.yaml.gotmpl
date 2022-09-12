@@ -2,6 +2,5 @@ jxRequirements:
   ingress:
     namespaceSubDomain: "-pr{{ requiredEnv "PULL_NUMBER" }}."
 
-settings:
-  domain: "pr{{ requiredEnv "PULL_NUMBER" }}.nip.io"
+domain: "pr{{ requiredEnv "PULL_NUMBER" }}.nip.io"
 

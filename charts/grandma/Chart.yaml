@@ -2,14 +2,5 @@ apiVersion: v2
 description: Collected applications for demo purpose
 name: grandma
 version: 0.0.1
-dependencies:
 
-- name: spring-demo
-  alias: spring-demo-gm
-  repository: https://babadofar.github.io/jx3-k3s-vault-demo/
-  version: 0.0.10
 
-- name: node-demo
-  alias: node-demo-gm
-  repository: https://babadofar.github.io/jx3-k3s-vault-demo/
-  version: 0.0.2

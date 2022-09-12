@@ -1,0 +1,16 @@
+environments:
+  default:
+    values:
+    - jx-values.yaml
+helmfiles:
+- path: helmfiles/spring-demo/helmfile.yaml
+- path: helmfiles/node-demo/helmfile.yaml
+repositories:
+- name: jx3
+  url: https://jenkins-x-charts.github.io/repo
+
+releases:
+- chart: './charts/grandma'
+  name: grandma
+  version: 0.1.0-SNAPSHOT  
+  

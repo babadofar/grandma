@@ -35,7 +35,7 @@ spec:
           script: |
               #!/usr/bin/env sh
               source .jx/variables.sh
-              jx preview create 
+              jx preview create --service node-demo --no-watch
 
   podTemplate: {}
   serviceAccountName: tekton-bot
