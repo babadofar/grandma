@@ -1,1 +1,1 @@
-This repo    .helm charts.
+This repo had  helm charts
